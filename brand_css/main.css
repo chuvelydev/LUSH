@@ -1024,7 +1024,7 @@ body {
     font-size: 20px;
   }
 
-  .pic_wrap {
+  html .pic_wrap {
     width: 70%;
     height: 580px;
     border-radius: 20px;
@@ -1646,7 +1646,7 @@ body {
 
   /*con4 효과 컨텐츠*/
 
-  .pic_wrap {
+  html .pic_wrap {
     width: 100%;
     height: 300px;
     border-radius: 20px;
