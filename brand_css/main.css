@@ -1326,7 +1326,7 @@ body {
   /*visual*/
   .visual {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background: url(../brand_img/visual.jpg) no-repeat center/cover;
     display: flex;
     flex-direction: column;

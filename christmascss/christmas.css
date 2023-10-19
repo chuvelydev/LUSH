@@ -1021,7 +1021,7 @@ body {
   /*visual*/
   .visual {
     width: 100%;
-    height: 80vw;
+    height: 100vh;
     position: relative;
   }
   .visual > img {
@@ -1039,7 +1039,7 @@ body {
   }
   .visualtext img {
     margin-bottom: 80px;
-    width: 65vw;
+    width: 80vw;
   }
 
   @keyframes text {
@@ -1061,7 +1061,7 @@ body {
     margin-bottom: 12px;
     font-weight: 200;
     opacity: 0;
-    font-size: 2vw;
+    font-size: 2.5vw;
     transform: translateY(100%);
     display: block;
   }
@@ -1116,7 +1116,7 @@ body {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .visual .more:hover {
     background: #111;
@@ -1351,8 +1351,8 @@ body {
   .ogc1 {
     display: inline-block;
     margin-left: 3px;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: #fff;
     vertical-align: -5px;
@@ -1932,7 +1932,7 @@ line-height: 50px;
   /*visual*/
   .visual {
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     position: relative;
   }
   .visual > img {
@@ -1950,7 +1950,7 @@ line-height: 50px;
   }
   .visualtext img {
     margin-bottom: 50px;
-    width: 65vw;
+    width: 80vw;
   }
 
   @keyframes text {
@@ -1972,7 +1972,7 @@ line-height: 50px;
     margin-bottom: 12px;
     font-weight: 200;
     opacity: 0;
-    font-size: 2vw;
+    font-size: 2.5vw;
     transform: translateY(100%);
     display: block;
   }
@@ -2000,7 +2000,7 @@ line-height: 50px;
   }
   .visual .more {
     width: 15%;
-    height: 30px;
+    height: 40px;
     border: 2px solid #fff;
     position: absolute;
     top: 70%;
@@ -2026,9 +2026,9 @@ line-height: 50px;
   .visual .more a {
     color: #fff;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.6vw;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8vw;
   }
   .visual .more:hover {
     background: #111;
@@ -2832,7 +2832,7 @@ line-height: 50px;
 
   .visual {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     position: relative;
   }
   .visual > img {
@@ -2850,7 +2850,7 @@ line-height: 50px;
   }
   .visualtext img {
     margin-bottom: 20px;
-    width: 65vw;
+    width: 80vw;
   }
 
   @keyframes text {
@@ -2872,7 +2872,7 @@ line-height: 50px;
     margin-bottom: 12px;
     font-weight: 200;
     opacity: 0;
-    font-size: 2vw;
+    font-size: 4vw;
     transform: translateY(100%);
     display: block;
   }
@@ -2927,7 +2927,7 @@ line-height: 50px;
     width: 100%;
     height: 25px;
     line-height: 5vw;
-    font-size: 1.7vw;
+    font-size: 1.9vw;
     display: block;
   }
   .visual .more:hover {
@@ -3708,7 +3708,7 @@ line-height: 50px;
     animation: hithere_btn 1s infinite;
     cursor: pointer;
     background: url(../christmasimg/btn_play.svg) no-repeat center center;
-    z-index: 555;
+    z-index: 1;
   }
   @keyframes hithere_btn {
     30% {
