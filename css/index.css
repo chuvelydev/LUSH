@@ -38,6 +38,92 @@ body {
     font-family: "Pretendard-Regular";
   }
 
+  #visual {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .slide {
+    width: 8000px;
+    height: 100%;
+    position: relative;
+  }
+  .panel {
+    display: flex;
+    width: 8000px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .panel_1 {
+    width: 8000px;
+    height: 100%;
+  }
+  .panel_1 img {
+    width: 100%;
+    height: 100%;
+  }
+  /*navi*/
+  .navi {
+    display: flex;
+    position: absolute;
+    left: 12%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: none;
+  }
+  .navi li {
+    width: 30px;
+    height: 5px;
+    background: #ccc;
+    cursor: pointer;
+  }
+  .navi li:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
+  .navi li.on {
+    background: red;
+  }
+  /*화살표*/
+  .slide a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slide .prev {
+    left: 20px;
+  }
+  .slide .next {
+    left: 1850px;
+  }
+  .panelTitle {
+    position: absolute;
+
+    top: 20%;
+    display: flex;
+
+    opacity: 0;
+  }
+  .panelTitle.on {
+    animation: move 1s forwards;
+  }
+  @keyframes move {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .page {
+    display: none;
+  }
+
   /**********header*****/
   .burger {
     position: fixed;
@@ -183,6 +269,7 @@ body {
 
   /*******비주얼*******/
 
+  /*
   #visual {
     width: 100%;
     height: 873px;
@@ -204,14 +291,7 @@ body {
     color: #fff;
   }
 
-  /*.slide li h2 {
-    position: absolute;
-    left: 10%;
-    top: 75%;
-    font-size: 2.7em;
-    font-family: "Montserrat", sans-serif;
-    text-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
-  }*/
+ 
 
   .slide li:nth-of-type(1) {
     background-image: url(../img/pic11.png);
@@ -226,8 +306,6 @@ body {
   .slide li:nth-of-type(4) {
     background-image: url(../img/pic4.jpg);
   }
-
-  /*화살표*/
 
   #visual img {
     width: 30px;
@@ -254,6 +332,7 @@ body {
     opacity: 0.5;
     transition: 0.7s ease-in-out;
   }
+  */
 
   /*******컨테이너*******/
 
@@ -553,6 +632,7 @@ body {
   }
 
   .btn {
+    display: none;
     cursor: pointer;
     position: relative;
   }
@@ -639,7 +719,6 @@ body {
     width: 1500px;
     margin: 0px auto;
     display: flex;
-
   }
 
   .c5-left {
