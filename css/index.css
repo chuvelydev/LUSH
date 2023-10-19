@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: #111;
 }
-body {
+html,body {
   overflow-x: hidden;
   word-break: keep-all;
   box-sizing: border-box;
@@ -960,7 +960,12 @@ body {
   }
 
   /*******비주얼*******/
+<<<<<<< HEAD
   #visual {
+=======
+
+   #visual {
+>>>>>>> e4eeca1c1f44aa5503fd4f5685a49982805de7df
     width: 100%;
     height: 100vh;
   }
@@ -1011,16 +1016,53 @@ body {
   }
   /*화살표*/
   .slide a {
+<<<<<<< HEAD
     display: none;
+=======
+    display:none;
+>>>>>>> e4eeca1c1f44aa5503fd4f5685a49982805de7df
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
   .slide .prev {
+<<<<<<< HEAD
     left: 20px;
   }
   .slide .next {
     left: 1850px;
+=======
+      display:none;
+    left: 20px;
+  }
+  .slide .next {
+      display:none;
+    left: 1850px;
+  }
+  .panelTitle {
+    position: absolute;
+
+    top: 20%;
+    display: flex;
+
+    opacity: 0;
+  }
+  .panelTitle.on {
+    animation: move 1s forwards;
+  }
+  @keyframes move {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .page {
+    display: none;
+>>>>>>> e4eeca1c1f44aa5503fd4f5685a49982805de7df
   }
 
   /*******컨테이너*******/
