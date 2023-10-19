@@ -1,23 +1,42 @@
-$(document).ready(function () {
+$(function () {
   $(".burger").on("click", function () {
     $(".burger div:nth-child(1)").toggleClass("on");
     $(".burger div:nth-child(2)").toggleClass("on");
     $(".burger div:nth-child(3)").toggleClass("on");
     $(".drop").toggleClass("on");
   });
+  $(function () {
+    //Visual//
+    let total = $(".slide li").length;
 
-  //Visual//
-  let total = $(".slide li").length;
+    let i = 1;
+    let timer;
 
-  let i = 1;
-  let timer;
+    start();
+    //slide img
+    function start() {
+      timer = setInterval(function () {
+        if (i == 4) {
+          i = 1;
+        } else {
+          i++;
+        }
+        $(".slide li").eq(i).fadeIn();
+        for (let j = 1; j < 5; j++) {
+          if (i != j) {
+            setTimeout(function () {
+              $(".slide li").eq(j).fadeOut();
+            }, 300);
+          }
+        }
+      }, 2500); //초
+    }
 
-  start();
-  //slide img
-  function start() {
-    timer = setInterval(function () {
-      if (i == 4) {
-        i = 1;
+    //다음
+    $(".next").on("click", function () {
+      clearInterval(timer);
+      if (i == total - 1) {
+        i = 0;
       } else {
         i++;
       }
@@ -29,27 +48,9 @@ $(document).ready(function () {
           }, 300);
         }
       }
-    }, 2500); //초
-  }
 
-  //다음
-  $(".next").on("click", function () {
-    clearInterval(timer);
-    if (i == total - 1) {
-      i = 1;
-    } else {
-      i++;
-    }
-    $(".slide li").eq(i).fadeIn();
-    for (let j = 1; j < 5; j++) {
-      if (i != j) {
-        setTimeout(function () {
-          $(".slide li").eq(j).fadeOut();
-        }, 300);
-      }
-    }
-
-    start();
+      start();
+    });
 
     //이전
     $(".prev").on("click", function () {
@@ -72,6 +73,8 @@ $(document).ready(function () {
 
       start();
     });
+
+    //container 1//
   });
 
   //Scroll//
