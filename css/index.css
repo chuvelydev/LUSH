@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: #111;
 }
-body {
+html,body {
   overflow-x: hidden;
   word-break: keep-all;
   box-sizing: border-box;
@@ -1011,14 +1011,17 @@ body {
   }
   /*화살표*/
   .slide a {
+    display:none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
   .slide .prev {
+      display:none;
     left: 20px;
   }
   .slide .next {
+      display:none;
     left: 1850px;
   }
   .panelTitle {
